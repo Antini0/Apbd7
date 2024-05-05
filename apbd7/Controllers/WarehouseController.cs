@@ -34,7 +34,7 @@ namespace apbd7;
             }
 
             // Połączenie z bazą danych
-            using (var connection = new SqlConnection(_configuration.GetConnectionString("YourConnectionString")))
+            using (var connection = new SqlConnection(_configuration.GetConnectionString("Default")))
             {
                 await connection.OpenAsync();
 
